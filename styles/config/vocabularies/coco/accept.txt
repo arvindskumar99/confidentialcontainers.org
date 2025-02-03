@@ -23,11 +23,13 @@ OCI
 oras
 PCR
 Peerpod
+PodVM
 (?i)qemu
 [rR]ego
 respin
 RTMR
 Rivos
+RVPSConfiguration
 Sched
 SKLearn
 [sS]kopeo
@@ -36,6 +38,7 @@ SKLearn
 URI
 vcpus
 VM
+VMs
 VNet
 wget
 Whitepaper
@@ -84,6 +87,7 @@ passthrough
 [nN]ydus
 runtimes
 runtimeclass
+runtimeclasses
 (?i)kms
 KMSes
 [aA]liyun
@@ -93,3 +97,12 @@ grpc
 gRPC
 proto
 protobuf
+[uU]ltravisor
+[bB]ootloader
+gpg
+skopeo
+keypair
+plaintext
+Dockerfile
+ghcr
+repo

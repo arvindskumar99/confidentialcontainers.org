@@ -18,7 +18,7 @@ Alternatively, refer to the [AMDESE guide](https://github.com/confidential-conta
 
 ### Create the Certificate-Chain
 
-Certificate chains (cert-chain) are an essential piece for creating a secure and trusted environment, ensuring that data is processed securely and that all components involved are verified and trustworthy. Use the following commands to create a cert-chain for SNP using snphost.
+Certificate chains (cert-chain) are an essential piece for creating a secure and trusted environment, ensuring that data is processed securely and that all components involved are verified and trustworthy. Use the following commands to create a cert-chain for SNP.
 
 ```
 git clone -b snphost-0.5.0 https://github.com/virtee/snphost.git && cd snphost/
@@ -28,9 +28,10 @@ mkdir /tmp/certs
 ./target/debug/snphost import /tmp/certs /opt/snp/cert_chain.cert
 ```
 
-### Edit the SNP Config File
 
-Next, you will need to install the operator first before being able to edit the SNP configuration file. Follow these [instructions](https://confidentialcontainers.org/docs/getting-started/installation/) to setup the operator. In order to use cert chain that was made for SNP, the Kata SNP configuration file needs to be edited first. The config file can be found under ``` /opt/kata/share/defaults/kata-containers/configuration-qemu-snp.toml ```.
+### *Optional* Edit the SNP config File
+
+The previous section installs the cert-chain in the default path, if you would like to install the cert-chains in a custom directory, it will need to be specified in the SNP config file. But first, you will need to install the operator first before being able to edit the SNP config file. Follow these [instructions](https://confidentialcontainers.org/docs/getting-started/installation/) to setup the operator. In order to use cert chain that was made for SNP, the Kata SNP configuration file needs to be edited first. The config file can be found under ``` /opt/kata/share/defaults/kata-containers/configuration-qemu-snp.toml ```.
 
 The location of the certificate chain needs to be specified under ```snp_certs_path```.
 
